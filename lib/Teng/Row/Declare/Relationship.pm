@@ -63,7 +63,7 @@ sub import {
                 : sub {
                     my $self = shift;
                     $foreign_key ||= lc( $self->{table_name} ) . DEFAULT_FORIGN_KEY_SUFFIX;
-                    return $self->_fetch( $name, [ $foreign_key => $self->$primary_key, @$search_conds ], $search_attrs, (MODE_HAS_ONE) ? 1 : 0, $alias, @_ );
+                    return $self->_fetch( $name, [ $foreign_key => $self->$primary_key, @$search_conds ], $search_attrs, ( $mode == MODE_HAS_ONE ) ? 1 : 0, $alias, @_ );
                 };
 
             {
