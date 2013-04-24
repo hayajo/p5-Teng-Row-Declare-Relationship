@@ -3,7 +3,7 @@ use Module::Install::Repository;
 name 'Teng-Row-Declare-Relationship';
 all_from 'lib/Teng/Row/Declare/Relationship.pm';
 
-requires 'Teng' => '0.16';
+requires 'Teng' => '0.18';
 
 tests 't/*.t';
 author_tests 'xt';

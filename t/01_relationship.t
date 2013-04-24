@@ -30,9 +30,9 @@ for my $url (@urls) {
 subtest 'relationship' => sub {
     no strict 'refs';
     no warnings 'redefine';
-    my $orig_execute = *{"Teng::_execute"}{CODE};
+    my $orig_execute = *{"Teng::execute"}{CODE};
     my $sql;
-    local *{"Teng::_execute"} = sub {
+    local *{"Teng::execute"} = sub {
         ( $sql = $_[1] ) =~ s/[\r\n]/ /mg;
         $orig_execute->(@_);
     };
