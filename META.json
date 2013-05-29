@@ -1,0 +1,65 @@
+{
+   "abstract" : "DSL for declaring relationships",
+   "author" : [
+      "hayajo <hayajo@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Milla version v1.0.2, Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.130880",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Teng-Row-Declare-Relationship",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "Module::Build::Tiny" : "0.019"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::Pod" : "1.41"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Teng" : "0.17",
+            "perl" : "5.010001"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "DBD::SQLite" : "1.30",
+            "DBIx::QueryLog" : "0",
+            "Test::More" : "0.88"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/hayajo/p5-Teng-Row-Declare-Relationship/issues"
+      },
+      "homepage" : "https://github.com/hayajo/p5-Teng-Row-Declare-Relationship",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/hayajo/p5-Teng-Row-Declare-Relationship.git",
+         "web" : "https://github.com/hayajo/p5-Teng-Row-Declare-Relationship"
+      }
+   },
+   "version" : "0.01"
+}
+
